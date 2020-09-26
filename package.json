@@ -1,0 +1,19 @@
+{
+  "name": "acsd-assignment-4-tylermatzelle",
+  "version": "1.0.0",
+  "description": "This respository is intended for the use of Focus College Students enrolled in the Advanced Certificate of Software Development located in Kelowna, BC and Surrey, BC.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TylerMatzelle/developing-software-intro-assignment-4.git"
+  },
+  "author": "Tyler Matzelle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TylerMatzelle/developing-software-intro-assignment-4/issues"
+  },
+  "homepage": "https://github.com/TylerMatzelle/developing-software-intro-assignment-4#readme"
+}
