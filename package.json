@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/TylerMatzelle/developing-software-intro-assignment-4/issues"
   },
-  "homepage": "https://github.com/TylerMatzelle/developing-software-intro-assignment-4#readme"
+  "homepage": "https://github.com/TylerMatzelle/developing-software-intro-assignment-4#readme",
+  "devDependencies": {
+    "eslint": "^7.10.0"
+  }
 }
