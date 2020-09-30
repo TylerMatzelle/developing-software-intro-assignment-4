@@ -1,2 +1,2 @@
 // return Hello World when running script
-console.log("Hello World");
+export const hello = () => "Hello world!";

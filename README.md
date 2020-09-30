@@ -12,7 +12,7 @@ This respository is intended for the use of Focus College Students enrolled in t
 
 ---
 
-This is a program to compile then run a script in typescript, while running a package called eslint to find and fix problems in the script.
+This is a program to compile, fix and format code, test then run a script in typescript.
 
 ### To run:
 
@@ -39,5 +39,7 @@ compile and run
 npm run prestart:dev
 ```
 
-npm run build:lint:compile:prettier
+execute all
+```
+npm run build:lint:compile:format
 ```
