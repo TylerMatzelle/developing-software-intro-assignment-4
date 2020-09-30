@@ -34,14 +34,10 @@ eslint:
 npm run build:lint
 ```
 
-eslint and compiler
-
+compile and run
 ```
-npm run start:dev
+npm run prestart:dev
 ```
 
-Compiler, eslint and your script:
-
-```
-npm run build:lint:compile
+npm run build:lint:compile:prettier
 ```
