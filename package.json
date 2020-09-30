@@ -1,35 +1,34 @@
 {
   "name": "acsd-assignment-4-tylermatzelle",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "This respository is intended for the use of Focus College Students enrolled in the Advanced Certificate of Software Development located in Kelowna, BC and Surrey, BC.",
   "main": "index.js",
   "scripts": {
     "start": "node dist/index.js",
-    "prestart:dev": "npm run start",
+    "prestart:dev": "npm run start && npm run build:compile",
     "start:dev": "npm run build",
     "start:dev:notest": "npm run build:compile && npm run start",
-    
-    "build": "npm run build:lint && npm run build:compile",
-    "build:fix": "npm run build:lint:fix && npm run build:compile",
+    "build": "npm run build:lint && npm run build:prettier && npm run build:compile",
+    "build:fix": "npm run build:lint:fix && npm run build:prettier:fix && npm run build:compile",
     "build:lint": "npx eslint src/**/*.ts --ext .ts",
+    "build:prettier": "prettier --write {tests,src}/**/*.ts",
     "build:lint:fix": "eslint {tests,src}/**/*.ts --ext .ts --fix",
+    "build:prettier:fix": "prettier --write {tests,src}/**/*.ts --fix",
     "build:compile": "tsc",
-    "build:lint:compile": "npm run build:lint && npm run build:compile && npm run npm run start"
+    "build:lint:compile:format": "npm run build:lint && npm run build:prettier && npm run build:compile && npm run start"
   },
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/TylerMatzelle/developing-software-intro-assignment-4.git"
   },
-
   "author": "Tyler Matzelle",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/TylerMatzelle/developing-software-intro-assignment-4/issues"
   },
-
   "homepage": "https://github.com/TylerMatzelle/developing-software-intro-assignment-4#readme",
   "devDependencies": {
-    "eslint": "^7.10.0"
+    "eslint": "^7.10.0",
+    "prettier": "2.1.2"
   }
 }

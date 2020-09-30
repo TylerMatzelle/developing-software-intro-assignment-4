@@ -1,0 +1,3 @@
+# tell prettier to ignore certain folders:
+dist
+node_modules
