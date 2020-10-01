@@ -35,7 +35,7 @@ Execute all
 npm run build:lint:compile:format
 ```
 
-Answer to how many hands per human there are
+Answer to how many hands per human there are, and for "tyler" to say hello!
 ```
 npm run hands
 ```

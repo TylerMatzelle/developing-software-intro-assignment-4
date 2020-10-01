@@ -1,3 +1,5 @@
+import {tyler} from '.././index.ts';
+
 require('yargs')
   .scriptName("hands-per-human")
   .usage('$0 <cmd> [args]')
@@ -10,7 +12,7 @@ require('yargs')
   }, 
   
   function (argv) {
-    console.log("Hello!")
+    tyler.sayhello();
     console.log('There are', argv.hands, 'hands on a human!')
   })
   .help()
