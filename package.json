@@ -1,6 +1,6 @@
 {
   "name": "acsd-assignment-4-tylermatzelle",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "This respository is intended for the use of Focus College Students enrolled in the Advanced Certificate of Software Development located in Kelowna, BC and Surrey, BC.",
   "main": "index.js",
   "scripts": {
@@ -15,8 +15,8 @@
     "build:lint:fix": "eslint {tests,src}/**/*.ts --ext .ts --fix",
     "build:prettier:fix": "prettier --write {tests,src}/**/*.ts --fix",
     "build:compile": "tsc",
-    "build:lint:compile:format": "npm run build:lint && npm run build:prettier && npm run build:compile && npm run test && npm run start",
-    "test":"nyc mocha -r ts-node/register tests/**/*.spec.ts"
+    "build:lint:compile:format": "npm run build:lint && npm run build:prettier && npm run test && npm run build:compile && npm run start",
+    "test": "nyc mocha -r ts-node/register tests/**/*.spec.ts"
   },
   "repository": {
     "type": "git",
@@ -35,6 +35,7 @@
   "dependencies": {
     "@types/mocha": "^8.0.3",
     "chai": "^4.2.0",
-    "mocha": "^8.1.3"
+    "mocha": "^8.1.3",
+    "nyc": "^15.1.0"
   }
 }
